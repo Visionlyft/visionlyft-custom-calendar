@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  StyleProp,
-  ViewStyle,
-  TextStyle,
-} from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { CustomCalendarProps, CellStyle } from "./CustomCalendarTypes";
 import { styles as defaultStyles } from "./CustomCalendarStyles";
 
@@ -80,8 +73,12 @@ export const CustomCalendar: React.FC<
       date
     );
     setSelectedDate(newDate);
+
+    const addDay = new Date(newDate);
+    addDay.setDate(newDate.getDate() + 1);
+
     if (onSubmit) {
-      onSubmit(newDate);
+      onSubmit(addDay);
     }
   };
 

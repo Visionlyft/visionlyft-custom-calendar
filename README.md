@@ -24,6 +24,11 @@ npm install @visionlyft/custom-calendar
 
 ## Usage
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+  <img src="https://github.com/Visionlyft/visionlyft-custom-calendar/blob/main/src/images/npm/default-calendar.png" alt="Default Custom Calendar 1" width="200" style="border: 1px solid #ddd;"/>
+  <img src="https://raw.githubusercontent.com/Visionlyft/visionlyft-custom-calendar/main/src/images/npm/customized-calendar.png" alt="Customized Calendar" width="200" style="border: 1px solid #ddd;"/>
+</div>
+
 ### Default Use
 
 Here's how to use the calendar with default settings in your React Native application:
@@ -60,14 +65,14 @@ const App = () => {
       <CustomCalendar
         onSubmit={(date) => console.log(date)}
         containerStyle={{ backgroundColor: "lightgrey", borderRadius: 10 }}
-        headerStyle={{ backgroundColor: "skyblue", padding: 10 }}
+        headerStyle={{ backgroundColor: "#EEF7FF", padding: 10 }}
         headerTextStyle={{ color: "white", fontSize: 20 }}
         navButtonStyle={{ color: "white", fontSize: 16 }}
         cellTextStyle={{ color: "black", fontSize: 14 }}
-        cellStyle={{ backgroundColor: "lightblue", borderRadius: 5 }}
+        cellStyle={{ backgroundColor: "#EEF7FF", borderRadius: 5 }}
         prevIcon={<FontAwesome name="arrow-left" size={24} color="black" />}
         nextIcon={<FontAwesome name="arrow-right" size={24} color="black" />}
-        selectedDateCellStyle={{ backgroundColor: "green" }}
+        selectedDateCellStyle={{ backgroundColor: "#FC4100" }}
       />
     </View>
   );

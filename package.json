@@ -1,6 +1,6 @@
 {
   "name": "@visionlyft/custom-calendar",
-  "version": "1.0.3",
+  "version": "1.1.4",
   "description": "A custom calendar component for React Native.",
   "keywords": [
     "react-native",
